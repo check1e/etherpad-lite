@@ -2353,9 +2353,7 @@ function Ace2Inner(editorInfo, cssManagers) {
   };
 
   const hideEditBarDropdowns = () => {
-    if (window.parent.parent.padeditbar) { // required in case its in an iframe should probably use parent..  See Issue 327 https://github.com/ether/etherpad-lite/issues/327
-      window.parent.parent.padeditbar.toggleDropDown('none');
-    }
+    window.parent.parent.padeditbar.toggleDropDown('none');
   };
 
   const renumberList = (lineNum) => {
